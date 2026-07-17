@@ -5,7 +5,7 @@ import beforeDuringAfter from "@/public/images/before-during-after.png";
 
 export default function HowItWorks() {
   return (
-    <section className="mt-10 sm:mt-14">
+    <section id="how-it-works" className="scroll-mt-6 mt-10 sm:mt-14">
       <Container size="wide">
         <div className="mb-6 text-center sm:mb-8">
           <h2 className="font-serif text-2xl leading-tight tracking-[-0.01em] text-purple-600 sm:text-4xl">

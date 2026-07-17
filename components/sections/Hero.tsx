@@ -1,7 +1,10 @@
+import Image from "next/image";
 import { Container, CtaButton } from "@/components/ui";
+import riaDesktop from "@/public/images/ria-desktop.png";
+import riaMobile from "@/public/images/ria-mobile.png";
 
-const PDP_URL =
-  "https://perforacare.com/products/purple-magic-whitening-serum";
+const RIA_ALT =
+  "Instagram comment from riakapoor: I wasn't expecting much honestly, but this actually surprised me. I've been using it before going out and my teeth definitely look a lot brighter. My sister literally asked if I'd gotten them whitened.";
 
 export default function Hero() {
   return (
@@ -35,8 +38,26 @@ export default function Hero() {
             <span className="font-medium text-ink">better instantly</span>.
           </p>
 
+          {/* Real social proof, right before the CTA */}
+          <div className="mt-6 w-full max-w-sm overflow-hidden rounded-3xl shadow-card ring-1 ring-purple-100 sm:max-w-md md:max-w-lg">
+            <Image
+              src={riaMobile}
+              alt={RIA_ALT}
+              className="h-auto w-full sm:hidden"
+              sizes="(max-width: 640px) 100vw, 0px"
+              placeholder="blur"
+            />
+            <Image
+              src={riaDesktop}
+              alt={RIA_ALT}
+              className="hidden h-auto w-full sm:block"
+              sizes="(min-width: 640px) 512px, 0px"
+              placeholder="blur"
+            />
+          </div>
+
           <div className="mt-8">
-            <CtaButton href={PDP_URL}>See why purple serum works</CtaButton>
+            <CtaButton href="#how-it-works">See why purple serum works</CtaButton>
           </div>
         </div>
       </Container>
