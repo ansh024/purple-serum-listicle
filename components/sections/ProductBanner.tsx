@@ -4,7 +4,7 @@ import heroDesktop from "@/public/images/hero-desktop.png";
 import heroMobile from "@/public/images/hero-mobile.png";
 
 const BANNER_ALT =
-  "Why Perfora Purple Magic Serum works — purple color correction, natural enzymes, clinically proven and enamel safe.";
+  "Why Perfora Purple Magic Serum works - purple color correction, natural enzymes, clinically proven and enamel safe.";
 
 /** "Why Perfora Purple Magic Serum Works" infographic — D1 (landscape) on
  * desktop, M1 (square) on mobile. Split out of Hero so Myth vs. Fact can sit

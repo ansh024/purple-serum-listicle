@@ -26,7 +26,7 @@ export default function HabitsRoutine() {
 
           <p className="text-base leading-relaxed text-ink sm:text-lg md:col-start-2 md:row-start-2">
             Tea, coffee, curries, and smoking are what stain your teeth in the
-            first place — that&rsquo;s not changing anytime soon. What can
+            first place - that&rsquo;s not changing anytime soon. What can
             change is the 60 seconds after: a swipe of purple serum before you
             head out, and the stains stay concealed.
           </p>

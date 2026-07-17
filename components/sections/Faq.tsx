@@ -5,7 +5,7 @@ import { Container } from "@/components/ui";
 const FAQS = [
   {
     q: "How does the purple serum whiten teeth?",
-    a: "Purple and yellow cancel each other out. Put purple on your teeth, and it cancels the yellow — so they look white right away.",
+    a: "Purple and yellow cancel each other out. Put purple on your teeth, and it cancels the yellow - so they look white right away.",
   },
   {
     q: "How long does it take to show results?",
@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: "Can it replace normal brushing?",
-    a: "No — use it in addition to regular brushing, not instead of it, for the best results.",
+    a: "No - use it in addition to regular brushing, not instead of it, for the best results.",
   },
   {
     q: "How much should I use, and how often?",

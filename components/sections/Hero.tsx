@@ -22,7 +22,7 @@ export default function Hero() {
           <h1 className="font-serif text-[2rem] leading-[1.12] tracking-[-0.01em] text-ink sm:text-[2.75rem] md:max-w-4xl">
             The science behind why your teeth look{" "}
             <span className="italic text-yellow-500">yellow</span>
-            {" — and how "}
+            {" - and how "}
             <span className="italic text-purple-600">purple</span>
             {" cancels it out instantly"}
           </h1>
@@ -30,7 +30,7 @@ export default function Hero() {
           {/* Mobile: 2–3 short lines. Desktop: narrowed to set in 3 lines. */}
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
             Most whitening products take weeks to show a difference. Purple
-            works differently — it cancels out yellow right away, so your
+            works differently - it cancels out yellow right away, so your
             teeth look{" "}
             <span className="font-medium text-ink">better instantly</span>.
           </p>

@@ -30,7 +30,7 @@ export default function MythVsFact() {
           <span className="font-medium text-ink">
             Purple cancels yellow instantly
           </span>{" "}
-          — no bleaching needed.
+          - no bleaching needed.
         </p>
       </Container>
     </section>

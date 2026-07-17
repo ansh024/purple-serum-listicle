@@ -17,7 +17,7 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "The Science Behind Yellow Teeth — Purple Color Correction",
+  title: "The Science Behind Yellow Teeth - Purple Color Correction",
   description:
     "An educational look at why teeth appear yellow and how purple color correction neutralizes the tone instantly.",
 };

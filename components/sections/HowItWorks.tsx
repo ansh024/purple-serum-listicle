@@ -25,7 +25,7 @@ export default function HowItWorks() {
           <figure className="w-full md:flex-1">
             <Image
               src={colorTheory}
-              alt="Yellow and purple sit on opposite sides of the color wheel — purple pigment optically cancels yellow stain tones."
+              alt="Yellow and purple sit on opposite sides of the color wheel - purple pigment optically cancels yellow stain tones."
               className="h-auto w-full"
               sizes="(max-width: 768px) 100vw, 512px"
               placeholder="blur"
@@ -81,7 +81,7 @@ export default function HowItWorks() {
         {/* Realistic expectations, stated plainly */}
         <p className="mx-auto mt-6 max-w-md text-center text-sm leading-relaxed text-ink">
           *This is a quick fix, not permanent whitening. Purple hides the
-          yellow — it doesn&rsquo;t remove stains for good.
+          yellow - it doesn&rsquo;t remove stains for good.
         </p>
       </Container>
     </section>
