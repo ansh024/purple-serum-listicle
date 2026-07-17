@@ -22,17 +22,15 @@ export default function ProductBanner() {
           placeholder="blur"
         />
       </div>
-      {/* Desktop / tablet — narrowed 30% from the full wide column */}
+      {/* Desktop / tablet — sized up for readability */}
       <Container size="wide" className="hidden sm:block">
-        <div className="mx-auto max-w-[717px]">
-          <Image
-            src={heroDesktop}
-            alt={BANNER_ALT}
-            className="h-auto w-full rounded-4xl shadow-card ring-1 ring-purple-100"
-            sizes="(min-width: 640px) 717px, 0px"
-            placeholder="blur"
-          />
-        </div>
+        <Image
+          src={heroDesktop}
+          alt={BANNER_ALT}
+          className="h-auto w-full rounded-4xl shadow-card ring-1 ring-purple-100"
+          sizes="(min-width: 640px) 100vw, 0px"
+          placeholder="blur"
+        />
       </Container>
     </section>
   );
