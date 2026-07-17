@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import clinicalResults from "@/public/images/clinical-results.png";
+import clinicalResultsMobile from "@/public/images/clinical-results-mobile.png";
 
 export default function ClinicalResultsModal({
   onClose,
@@ -58,10 +59,17 @@ export default function ClinicalResultsModal({
         </button>
 
         <Image
+          src={clinicalResultsMobile}
+          alt="Clinical trial results: User Experience and Satisfaction - 100% of users across trial visits felt the product was instantly appealing, felt freshness after first use, found it effective for even teeth colour, found it effective in increasing teeth cleanliness, were satisfied with overall product use, and found the apple-peach flavour instantly appealing."
+          className="h-auto w-full rounded-2xl sm:hidden"
+          sizes="(max-width: 640px) 100vw, 0px"
+          placeholder="blur"
+        />
+        <Image
           src={clinicalResults}
           alt="Clinical trial results: User Experience and Satisfaction - 100% of users across trial visits felt the product was instantly appealing, felt freshness after first use, found it effective for even teeth colour, found it effective in increasing teeth cleanliness, were satisfied with overall product use, and found the apple-peach flavour instantly appealing."
-          className="h-auto w-full rounded-2xl"
-          sizes="(max-width: 768px) 100vw, 672px"
+          className="hidden h-auto w-full rounded-2xl sm:block"
+          sizes="(min-width: 640px) 672px, 0px"
           placeholder="blur"
         />
       </div>
