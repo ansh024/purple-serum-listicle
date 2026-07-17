@@ -17,10 +17,10 @@ export default function HowItWorks() {
             desktop instead of one small image floating in a wide column */}
         <div className="mx-auto flex max-w-md flex-col items-center gap-8 md:max-w-none md:flex-row md:items-center md:gap-14">
           <p className="text-center text-base leading-relaxed text-ink sm:text-lg md:flex-1 md:text-left">
-            Yellow and purple sit on opposite ends of the color wheel. Applied
-            together, purple pigment optically{" "}
-            <span className="font-medium text-ink">cancels out yellow</span> —
-            the same principle colour-correcting makeup uses on skin tone.
+            Yellow and purple are opposite colors. Put purple on yellow, and
+            the yellow{" "}
+            <span className="font-medium text-ink">disappears</span>. That&rsquo;s
+            exactly what happens on your teeth.
           </p>
           <figure className="w-full md:flex-1">
             <Image
@@ -36,8 +36,7 @@ export default function HowItWorks() {
         {/* The proof — before / during / after */}
         <div className="mx-auto mt-8 max-w-3xl sm:mt-10">
           <p className="text-center text-base leading-relaxed text-ink sm:text-lg">
-            Here&rsquo;s what that looks like on real teeth — from the first
-            application to the reveal.
+            Here&rsquo;s what that looks like on real teeth.
           </p>
 
           <figure className="mt-6 overflow-hidden rounded-4xl shadow-card ring-1 ring-purple-100">
@@ -54,26 +53,26 @@ export default function HowItWorks() {
           <div className="mt-6 grid grid-cols-3 gap-3 text-center sm:gap-6">
             <div>
               <p className="text-sm font-semibold text-ink sm:text-base">
-                1. Yellow tones
+                1. Teeth look yellow
               </p>
               <p className="mt-1 text-xs text-ink sm:text-sm">
-                Natural surface staining
+                That&rsquo;s normal staining
               </p>
             </div>
             <div>
               <p className="text-sm font-semibold text-purple-600 sm:text-base">
-                2. Purple applied
+                2. Purple goes on
               </p>
               <p className="mt-1 text-xs text-ink sm:text-sm">
-                Pigment neutralizes yellow
+                It cancels the yellow
               </p>
             </div>
             <div>
               <p className="text-sm font-semibold text-ink sm:text-base">
-                3. Instantly brighter
+                3. Teeth look brighter
               </p>
               <p className="mt-1 text-xs text-ink sm:text-sm">
-                Visible in 60 seconds
+                You&rsquo;ll see it fast
               </p>
             </div>
           </div>
@@ -81,9 +80,8 @@ export default function HowItWorks() {
 
         {/* Realistic expectations, stated plainly */}
         <p className="mx-auto mt-6 max-w-md text-center text-sm leading-relaxed text-ink">
-          *The purple serum delivers a temporary cosmetic effect — it
-          neutralizes and conceals yellow stains, visible from the very first
-          use.
+          *This is a quick fix, not permanent whitening. Purple hides the
+          yellow — it doesn&rsquo;t remove stains for good.
         </p>
       </Container>
     </section>

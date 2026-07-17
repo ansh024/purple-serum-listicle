@@ -5,11 +5,11 @@ import { Container } from "@/components/ui";
 const FAQS = [
   {
     q: "How does the purple serum whiten teeth?",
-    a: "It uses corrective colour technology — purple and yellow are complementary colours, so applying purple on your teeth counteracts and cancels the yellow stains on the surface, making teeth appear whiter instantly.",
+    a: "Purple and yellow cancel each other out. Put purple on your teeth, and it cancels the yellow — so they look white right away.",
   },
   {
     q: "How long does it take to show results?",
-    a: "The colour-correction effect is visible from first use. With consistent use over 2–8 weeks, you can see up to 4 shades whiter teeth — results vary by person.",
+    a: "You'll see it work the first time you use it. Keep using it for 2–8 weeks and your teeth can look up to 4 shades whiter. It's different for everyone.",
   },
   {
     q: "Are there any side effects?",

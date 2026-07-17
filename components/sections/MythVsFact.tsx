@@ -28,7 +28,7 @@ export default function MythVsFact() {
         <p className="mx-auto mt-6 max-w-xs text-center text-base leading-relaxed text-ink sm:max-w-sm">
           The takeaway?{" "}
           <span className="font-medium text-ink">
-            Purple neutralizes yellow instantly
+            Purple cancels yellow instantly
           </span>{" "}
           — no bleaching needed.
         </p>

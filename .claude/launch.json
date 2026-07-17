@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 3000
+    },
+    {
+      "name": "purple-serum-static-html",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8088", "--directory", "/Users/simranarora/Desktop/purple-serum-static-html"],
+      "port": 8088
     }
   ]
 }

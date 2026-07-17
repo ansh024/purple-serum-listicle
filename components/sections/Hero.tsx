@@ -24,15 +24,15 @@ export default function Hero() {
             <span className="italic text-yellow-500">yellow</span>
             {" — and how "}
             <span className="italic text-purple-600">purple</span>
-            {" instantly neutralizes it"}
+            {" cancels it out instantly"}
           </h1>
 
           {/* Mobile: 2–3 short lines. Desktop: narrowed to set in 3 lines. */}
           <p className="mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
             Most whitening products take weeks to show a difference. Purple
-            color correction works on a different principle — neutralizing
-            yellow tones for an{" "}
-            <span className="font-medium text-ink">instant cosmetic improvement</span>.
+            works differently — it cancels out yellow right away, so your
+            teeth look{" "}
+            <span className="font-medium text-ink">better instantly</span>.
           </p>
 
           <div className="mt-8">

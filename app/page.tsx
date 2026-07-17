@@ -3,7 +3,6 @@ import MythVsFact from "@/components/sections/MythVsFact";
 import ProductBanner from "@/components/sections/ProductBanner";
 import TrustBar from "@/components/sections/TrustBar";
 import HowItWorks from "@/components/sections/HowItWorks";
-import HabitsRoutine from "@/components/sections/HabitsRoutine";
 import RealResults from "@/components/sections/RealResults";
 import Faq from "@/components/sections/Faq";
 import StickyAddToCart from "@/components/sections/StickyAddToCart";
@@ -16,7 +15,6 @@ export default function Home() {
       <ProductBanner />
       <TrustBar />
       <HowItWorks />
-      <HabitsRoutine />
       <RealResults />
       <Faq />
       <StickyAddToCart />
