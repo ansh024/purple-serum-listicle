@@ -1,9 +1,12 @@
 import Image from "next/image";
 import { Container, CtaButton } from "@/components/ui";
-import Placeholder from "@/components/Placeholder";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import StripsTrustBar from "@/components/strips/StripsTrustBar";
 import stripsMythVsFact from "@/public/images/strips-myth-vs-fact.png";
+import stripsBannerDesktop from "@/public/images/strips-banner-desktop.png";
+import stripsBannerMobile from "@/public/images/strips-banner-mobile.png";
+import stripsHowToUseDesktop from "@/public/images/strips-how-to-use-desktop.png";
+import stripsHowToUseMobile from "@/public/images/strips-how-to-use-mobile.png";
 
 const PDP_URL =
   "https://perforacare.com/products/purple-magic-teeth-whitening-strips";
@@ -116,14 +119,6 @@ export default function PurpleStripsPage() {
               No peroxide, no peeling.
             </p>
 
-            <div className="mt-6 w-full max-w-sm overflow-hidden rounded-3xl shadow-card ring-1 ring-purple-100 sm:max-w-md md:max-w-lg">
-              <Placeholder
-                label="Social proof / testimonial (image pending)"
-                aspect="aspect-[4/3]"
-                rounded="rounded-3xl"
-              />
-            </div>
-
             <div className="mt-8">
               <CtaButton href="#how-it-works">See how the strips work</CtaButton>
             </div>
@@ -174,16 +169,21 @@ export default function PurpleStripsPage() {
       {/* PRODUCT BANNER */}
       <section className="mt-6 sm:mt-7">
         <div className="sm:hidden">
-          <Placeholder
-            label="Why Purple Strips work - banner (image pending)"
-            aspect="aspect-square"
-            rounded="rounded-none"
+          <Image
+            src={stripsBannerMobile}
+            alt="Why Purple Strips work - instant purple color correction, long-term whitening with P3 ingredient technology, strengthens enamel, and clinically proven."
+            className="h-auto w-full"
+            sizes="100vw"
+            placeholder="blur"
           />
         </div>
         <Container size="wide" className="hidden sm:block">
-          <Placeholder
-            label="Why Purple Strips work - banner (image pending)"
-            aspect="aspect-[16/9]"
+          <Image
+            src={stripsBannerDesktop}
+            alt="Why Purple Strips work - instant purple color correction, long-term whitening with P3 ingredient technology, strengthens enamel, and clinically proven."
+            className="h-auto w-full rounded-4xl shadow-card ring-1 ring-purple-100"
+            sizes="(min-width: 640px) 100vw, 0px"
+            placeholder="blur"
           />
         </Container>
       </section>
@@ -200,30 +200,32 @@ export default function PurpleStripsPage() {
             </h2>
           </div>
 
-          <div className="mx-auto flex max-w-md flex-col items-center gap-8 md:max-w-none md:flex-row md:items-center md:gap-14">
-            <p className="text-center text-base leading-relaxed text-ink sm:text-lg md:flex-1 md:text-left">
-              These strips work two ways. The purple coating cancels yellow the
-              moment you put it on, so teeth look{" "}
-              <span className="font-medium text-ink">brighter right away</span>.
-              Underneath, PAP gently removes real stains over the next few days
-              - and because there&rsquo;s no peroxide, it doesn&rsquo;t sting.
-            </p>
-            <figure className="w-full md:flex-1">
-              <Placeholder
-                label="How it works - strips diagram (image pending)"
-                aspect="aspect-square"
-              />
-            </figure>
-          </div>
+          <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-ink sm:text-lg">
+            These strips work two ways. The purple coating cancels yellow the
+            moment you put it on, so teeth look{" "}
+            <span className="font-medium text-ink">brighter right away</span>.
+            Underneath, PAP gently removes real stains over the next few days -
+            and because there&rsquo;s no peroxide, it doesn&rsquo;t sting.
+          </p>
 
-          <div className="mx-auto mt-8 max-w-3xl sm:mt-10">
+          <div className="mx-auto mt-10 max-w-3xl sm:mt-12">
             <p className="text-center text-base leading-relaxed text-ink sm:text-lg">
-              Here&rsquo;s what that looks like on real teeth.
+              And using them couldn&rsquo;t be simpler.
             </p>
             <figure className="mt-6 overflow-hidden rounded-4xl shadow-card ring-1 ring-purple-100">
-              <Placeholder
-                label="Before / during / after - strips (image pending)"
-                aspect="aspect-[5/2]"
+              <Image
+                src={stripsHowToUseMobile}
+                alt="How to use, in 6 steps: remove the strip with dry hands, wet teeth with your tongue, apply to upper or lower teeth avoiding the gumline, fold the excess behind your teeth, wait for the strip to dissolve, then repeat on the other side."
+                className="h-auto w-full sm:hidden"
+                sizes="100vw"
+                placeholder="blur"
+              />
+              <Image
+                src={stripsHowToUseDesktop}
+                alt="How to use, in 6 steps: remove the strip with dry hands, wet teeth with your tongue, apply to upper or lower teeth avoiding the gumline, fold the excess behind your teeth, wait for the strip to dissolve, then repeat on the other side."
+                className="hidden h-auto w-full sm:block"
+                sizes="(min-width: 640px) 768px, 0px"
+                placeholder="blur"
               />
             </figure>
 
