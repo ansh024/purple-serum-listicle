@@ -113,11 +113,10 @@ export default function PurpleStripsPage() {
               {" - and whiten them for real over time"}
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
-              Most whitening strips work slowly - and some sting. These do both
-              jobs at once: purple brightens the moment you use them, while PAP
-              gently whitens{" "}
+              Other strips take weeks - and some sting. These do both at once:
+              purple cancels yellow the second they go on, and PAP whitens{" "}
               <span className="font-medium text-ink">for real over 7 days</span>.
-              No peroxide, no peeling.
+              Peroxide-free, and they dissolve on their own.
             </p>
 
             {/* Real social proof, right before the CTA */}
@@ -220,59 +219,61 @@ export default function PurpleStripsPage() {
             and because there&rsquo;s no peroxide, it doesn&rsquo;t sting.
           </p>
 
-          <div className="mx-auto mt-10 max-w-3xl sm:mt-12">
-            <p className="text-center text-base leading-relaxed text-ink sm:text-lg">
-              And using them couldn&rsquo;t be simpler.
-            </p>
-            <figure className="mt-6 overflow-hidden rounded-4xl shadow-card ring-1 ring-purple-100">
-              <Image
-                src={stripsHowToUseMobile}
-                alt="How to use, in 6 steps: remove the strip with dry hands, wet teeth with your tongue, apply to upper or lower teeth avoiding the gumline, fold the excess behind your teeth, wait for the strip to dissolve, then repeat on the other side."
-                className="h-auto w-full sm:hidden"
-                sizes="100vw"
-                placeholder="blur"
-              />
-              <Image
-                src={stripsHowToUseDesktop}
-                alt="How to use, in 6 steps: remove the strip with dry hands, wet teeth with your tongue, apply to upper or lower teeth avoiding the gumline, fold the excess behind your teeth, wait for the strip to dissolve, then repeat on the other side."
-                className="hidden h-auto w-full sm:block"
-                sizes="(min-width: 640px) 768px, 0px"
-                placeholder="blur"
-              />
-            </figure>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-base leading-relaxed text-ink sm:text-lg">
+            And using them couldn&rsquo;t be simpler.
+          </p>
+        </Container>
 
-            <div className="mt-6 grid grid-cols-3 gap-3 text-center sm:gap-6">
-              <div>
-                <p className="text-sm font-semibold text-ink sm:text-base">
-                  1. Stick it on
-                </p>
-                <p className="mt-1 text-xs text-ink sm:text-sm">
-                  It dissolves on its own
-                </p>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-purple-600 sm:text-base">
-                  2. Instant brightening
-                </p>
-                <p className="mt-1 text-xs text-ink sm:text-sm">
-                  Purple cancels yellow now
-                </p>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-ink sm:text-base">
-                  3. Real whitening
-                </p>
-                <p className="mt-1 text-xs text-ink sm:text-sm">
-                  Up to 4X whiter in 7 days
-                </p>
-              </div>
+        {/* Full-bleed how-to-use guide - edge to edge for maximum readability */}
+        <figure className="mt-6 sm:mt-8">
+          <Image
+            src={stripsHowToUseMobile}
+            alt="How to use, in 6 steps: remove the strip with dry hands, wet teeth with your tongue, apply to upper or lower teeth avoiding the gumline, fold the excess behind your teeth, wait for the strip to dissolve, then repeat on the other side."
+            className="h-auto w-full sm:hidden"
+            sizes="100vw"
+            placeholder="blur"
+          />
+          <Image
+            src={stripsHowToUseDesktop}
+            alt="How to use, in 6 steps: remove the strip with dry hands, wet teeth with your tongue, apply to upper or lower teeth avoiding the gumline, fold the excess behind your teeth, wait for the strip to dissolve, then repeat on the other side."
+            className="hidden h-auto w-full sm:block"
+            sizes="100vw"
+            placeholder="blur"
+          />
+        </figure>
+
+        <Container size="wide">
+          <div className="mx-auto mt-8 grid max-w-2xl grid-cols-3 gap-3 text-center sm:gap-6">
+            <div>
+              <p className="text-sm font-semibold text-ink sm:text-base">
+                Instant
+              </p>
+              <p className="mt-1 text-xs text-ink sm:text-sm">
+                Purple cancels yellow on contact
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-purple-600 sm:text-base">
+                Over 7 days
+              </p>
+              <p className="mt-1 text-xs text-ink sm:text-sm">
+                PAP lifts real stains, gently
+              </p>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-ink sm:text-base">
+                The result
+              </p>
+              <p className="mt-1 text-xs text-ink sm:text-sm">
+                Up to 4X whiter teeth
+              </p>
             </div>
           </div>
 
-          <p className="mx-auto mt-6 max-w-md text-center text-sm leading-relaxed text-ink">
-            *The purple gives an instant cosmetic lift; the real whitening builds
-            up with regular use over about 7 days. Cosmetic product, not a
-            treatment for sensitivity.
+          <p className="mx-auto mt-8 max-w-md text-center text-sm leading-relaxed text-ink">
+            *Purple gives an instant cosmetic lift; the real whitening builds
+            with daily use over about 7 days. It&rsquo;s a cosmetic product, not
+            a treatment for sensitivity.
           </p>
         </Container>
       </section>
