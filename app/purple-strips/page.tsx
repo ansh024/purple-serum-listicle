@@ -7,6 +7,7 @@ import stripsBannerDesktop from "@/public/images/strips-banner-desktop.png";
 import stripsBannerMobile from "@/public/images/strips-banner-mobile.png";
 import stripsHowToUseDesktop from "@/public/images/strips-how-to-use-desktop.png";
 import stripsHowToUseMobile from "@/public/images/strips-how-to-use-mobile.png";
+import stripsReview from "@/public/images/strips-review.png";
 
 const PDP_URL =
   "https://perforacare.com/products/purple-magic-teeth-whitening-strips";
@@ -118,6 +119,17 @@ export default function PurpleStripsPage() {
               <span className="font-medium text-ink">for real over 7 days</span>.
               No peroxide, no peeling.
             </p>
+
+            {/* Real social proof, right before the CTA */}
+            <div className="mt-6 w-full max-w-sm overflow-hidden rounded-3xl shadow-card ring-1 ring-purple-100 sm:max-w-md md:max-w-lg">
+              <Image
+                src={stripsReview}
+                alt="Instagram comment from ananyamehta: I genuinely thought these would be another Instagram gimmick. Used them for a week before a friend's wedding and my teeth looked noticeably whiter. The best part? Zero sensitivity."
+                className="h-auto w-full"
+                sizes="(max-width: 640px) 100vw, 512px"
+                placeholder="blur"
+              />
+            </div>
 
             <div className="mt-8">
               <CtaButton href="#how-it-works">See how the strips work</CtaButton>
