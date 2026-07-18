@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Container } from "@/components/ui";
-import Placeholder from "@/components/Placeholder";
+import clinicalResults from "@/public/images/strips-clinical-results.png";
+import clinicalResultsMobile from "@/public/images/strips-clinical-results-mobile.png";
 
 function BadgeCheckIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -104,11 +106,20 @@ export default function StripsTrustBar() {
               </svg>
             </button>
 
-            {/* Replace with the strips clinical-results image when provided */}
-            <Placeholder
-              label="Strips clinical results (image pending)"
-              aspect="aspect-[3/4]"
-              rounded="rounded-2xl"
+            {/* Portrait crop on mobile, landscape on desktop */}
+            <Image
+              src={clinicalResultsMobile}
+              alt="Clinical results: progressive whitening backed by statistically significant data - up to 5.94 shades whiter by Day 14, 4.23 by Day 7, and 100% noticed reduced yellowness instantly."
+              className="h-auto w-full rounded-2xl sm:hidden"
+              sizes="(max-width: 640px) 100vw, 0px"
+              placeholder="blur"
+            />
+            <Image
+              src={clinicalResults}
+              alt="Clinical results: progressive whitening backed by statistically significant data - up to 5.94 shades whiter by Day 14, 4.23 by Day 7, and 100% noticed reduced yellowness instantly."
+              className="hidden h-auto w-full rounded-2xl sm:block"
+              sizes="(min-width: 640px) 672px, 0px"
+              placeholder="blur"
             />
           </div>
         </div>

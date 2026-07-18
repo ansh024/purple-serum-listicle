@@ -1,7 +1,9 @@
+import Image from "next/image";
 import { Container, CtaButton } from "@/components/ui";
 import Placeholder from "@/components/Placeholder";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import StripsTrustBar from "@/components/strips/StripsTrustBar";
+import stripsMythVsFact from "@/public/images/strips-myth-vs-fact.png";
 
 const PDP_URL =
   "https://perforacare.com/products/purple-magic-teeth-whitening-strips";
@@ -138,18 +140,25 @@ export default function PurpleStripsPage() {
             </h2>
           </div>
         </Container>
-        <div className="sm:hidden">
-          <Placeholder
-            label="Myth vs Fact - strips (image pending)"
-            aspect="aspect-square"
-            rounded="rounded-none"
+        <figure className="sm:hidden">
+          <Image
+            src={stripsMythVsFact}
+            alt="Myth vs. Fact: common beliefs about yellow teeth and whitening, side by side with the truth."
+            className="h-auto w-full"
+            sizes="100vw"
+            placeholder="blur"
           />
-        </div>
+        </figure>
         <Container size="wide" className="hidden sm:block">
-          <Placeholder
-            label="Myth vs Fact - strips (image pending)"
-            aspect="aspect-[16/9]"
-          />
+          <figure className="overflow-hidden rounded-4xl shadow-card ring-1 ring-purple-100">
+            <Image
+              src={stripsMythVsFact}
+              alt="Myth vs. Fact: common beliefs about yellow teeth and whitening, side by side with the truth."
+              className="h-auto w-full"
+              sizes="(min-width: 640px) 100vw, 0px"
+              placeholder="blur"
+            />
+          </figure>
         </Container>
         <Container size="wide">
           <p className="mx-auto mt-6 max-w-xs text-center text-base leading-relaxed text-ink sm:max-w-sm">
