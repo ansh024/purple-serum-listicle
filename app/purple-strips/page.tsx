@@ -113,10 +113,16 @@ export default function PurpleStripsPage() {
               {" - and whiten them for real over time"}
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
-              Other strips take weeks - and some sting. These do both at once:
-              purple cancels yellow the second they go on, and PAP whitens{" "}
-              <span className="font-medium text-ink">for real over 7 days</span>.
-              Peroxide-free, and they dissolve on their own.
+              Tired of yellow teeth and don&rsquo;t want to visit a dentist?
+              Here is an easy and quick way to whiten teeth at home.
+            </p>
+            <p className="mt-3 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
+              Purple whitening strips are formulated to break down tough yellow
+              stains and whiten teeth{" "}
+              <span className="font-medium text-ink">
+                up to 4 shades in just 7 days
+              </span>
+              .
             </p>
 
             {/* Real social proof, right before the CTA */}
@@ -168,11 +174,10 @@ export default function PurpleStripsPage() {
         </Container>
         <Container size="wide">
           <p className="mx-auto mt-6 max-w-xs text-center text-base leading-relaxed text-ink sm:max-w-sm">
-            The takeaway?{" "}
+            The takeaway -{" "}
             <span className="font-medium text-ink">
-              These strips brighten now and whiten for real
-            </span>{" "}
-            - no peroxide needed.
+              whitening strips are enamel safe &amp; brighten teeth!
+            </span>
           </p>
         </Container>
       </section>
@@ -212,11 +217,12 @@ export default function PurpleStripsPage() {
           </div>
 
           <p className="mx-auto max-w-2xl text-center text-base leading-relaxed text-ink sm:text-lg">
-            These strips work two ways. The purple coating cancels yellow the
-            moment you put it on, so teeth look{" "}
-            <span className="font-medium text-ink">brighter right away</span>.
-            Underneath, PAP gently removes real stains over the next few days -
-            and because there&rsquo;s no peroxide, it doesn&rsquo;t sting.
+            15 minutes of contact time on teeth release active ingredients and
+            break down stubborn yellow stains. These strips make teeth{" "}
+            <span className="font-medium text-ink">instantly white</span>{" "}
+            because of color correction tech, and underneath PAP and P3
+            ingredient blend remove yellow stains in a few days. No peroxide and
+            hence no teeth sensitivity.
           </p>
 
           <p className="mx-auto mt-8 max-w-2xl text-center text-base leading-relaxed text-ink sm:text-lg">

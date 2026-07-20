@@ -56,7 +56,7 @@ export default function StripsTrustBar() {
             <BadgeCheckIcon width={26} height={26} />
           </span>
           <span className="text-lg font-semibold leading-snug text-white sm:text-2xl">
-            Up to 4X whiter teeth - clinically proven, peroxide-free strips
+            Backed by clinical trials
           </span>
           <svg
             width="20"
