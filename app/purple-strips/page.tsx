@@ -106,17 +106,13 @@ export default function PurpleStripsPage() {
         <Container size="wide" className="relative">
           <div className="flex flex-col items-center text-center">
             <h1 className="font-serif text-[2rem] leading-[1.12] tracking-[-0.01em] text-ink sm:text-[2.75rem] md:max-w-4xl">
-              {"Got "}
+              {"Tired of "}
               <span className="italic text-yellow-500">yellow</span>
-              {" teeth? These strips brighten them "}
-              <span className="italic text-purple-600">instantly</span>
-              {" - and whiten them for real over time"}
+              {" teeth and don’t want to visit a dentist? Here is an easy and quick way to "}
+              <span className="italic text-purple-600">whiten teeth at home</span>
+              {"."}
             </h1>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
-              Tired of yellow teeth and don&rsquo;t want to visit a dentist?
-              Here is an easy and quick way to whiten teeth at home.
-            </p>
-            <p className="mt-3 max-w-md text-base leading-relaxed text-ink sm:text-lg md:max-w-xl">
               Purple whitening strips are formulated to break down tough yellow
               stains and whiten teeth{" "}
               <span className="font-medium text-ink">
@@ -223,10 +219,6 @@ export default function PurpleStripsPage() {
             because of color correction tech, and underneath PAP and P3
             ingredient blend remove yellow stains in a few days. No peroxide and
             hence no teeth sensitivity.
-          </p>
-
-          <p className="mx-auto mt-8 max-w-2xl text-center text-base leading-relaxed text-ink sm:text-lg">
-            And using them couldn&rsquo;t be simpler.
           </p>
         </Container>
 
