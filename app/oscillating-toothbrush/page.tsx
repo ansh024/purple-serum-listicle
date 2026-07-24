@@ -218,15 +218,12 @@ export default function OscillatingToothbrushPage() {
       {/* BIG BUY CTA (above reviews) */}
       <section className="mt-14 sm:mt-20">
         <Container size="wide">
-          <div className="flex flex-col items-center gap-3 text-center">
-            <p className="text-base text-ink">
-              <span className="font-semibold text-purple-600">₹1,799</span>{" "}
-              <span className="line-through">₹1,899</span>
-            </p>
-            <CtaButton href={PDP_URL} className="px-10 py-5 text-lg">
-              Buy Now
-            </CtaButton>
-          </div>
+          <CtaButton
+            href={PDP_URL}
+            className="mx-auto w-full max-w-md justify-center px-10 py-6 text-xl sm:text-2xl"
+          >
+            Buy Now
+          </CtaButton>
         </Container>
       </section>
 
