@@ -215,6 +215,21 @@ export default function OscillatingToothbrushPage() {
         </figure>
       </section>
 
+      {/* BIG BUY CTA (above reviews) */}
+      <section className="mt-14 sm:mt-20">
+        <Container size="wide">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <p className="text-base text-ink">
+              <span className="font-semibold text-purple-600">₹1,799</span>{" "}
+              <span className="line-through">₹1,899</span>
+            </p>
+            <CtaButton href={PDP_URL} className="px-10 py-5 text-lg">
+              Buy Now
+            </CtaButton>
+          </div>
+        </Container>
+      </section>
+
       {/* REAL REVIEWS */}
       <section className="mt-14 sm:mt-20">
         <Container size="wide">
@@ -281,19 +296,22 @@ export default function OscillatingToothbrushPage() {
         </Container>
       </section>
 
-      {/* STICKY BUY BAR (mobile) */}
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-purple-100 bg-white/95 px-4 py-3 shadow-[0_-8px_24px_rgba(90,50,180,0.10)] backdrop-blur sm:hidden">
-        <div className="flex items-center justify-between gap-3">
+      {/* STICKY BUY BAR (mobile + desktop) */}
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-purple-100 bg-white/95 px-4 py-3 shadow-[0_-8px_24px_rgba(90,50,180,0.10)] backdrop-blur sm:px-6 sm:py-4">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-3">
           <div className="min-w-0">
-            <p className="truncate text-sm font-semibold text-ink">
+            <p className="truncate text-sm font-semibold text-ink sm:text-base">
               Oscillating Toothbrush
             </p>
-            <p className="text-xs text-ink">
+            <p className="text-xs text-ink sm:text-sm">
               <span className="font-semibold text-purple-600">₹1,799</span>{" "}
               <span className="line-through">₹1,899</span>
             </p>
           </div>
-          <CtaButton href={PDP_URL} className="shrink-0 px-5 py-3 text-sm">
+          <CtaButton
+            href={PDP_URL}
+            className="shrink-0 px-5 py-3 text-sm sm:px-7 sm:py-4 sm:text-base"
+          >
             Buy Now
           </CtaButton>
         </div>
